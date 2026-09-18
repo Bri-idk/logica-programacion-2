@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de Temperatura</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h1>Conversor de Temperatura</h1>
+      <div class="options">
+        <label>
+          <input type="radio" name="tipoGrado" value="celsius" />
+          Celsius
+        </label>
+        <label>
+          <input type="radio" name="tipoGrado" value="fahrenheit" />
+          Fahrenheit
+        </label>
+      </div>
+      <div class="input-group">
+        <input
+          type="number"
+          id="grados"
+          placeholder="Ingresa la cantidad de grados"
+        />
+      </div>
+      <button type="button" id="btn-enviar">Convertir</button>
+      <div id="resultado" class="resultado"></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
